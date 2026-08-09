@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 5 - Multimedia in HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 6px;
+        }
+
+        img, video {
+            max-width: 100%;
+            border-radius: 6px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multimedia Elements in HTML5</h1>
+
+    <!-- IMAGE SECTION -->
+    <section>
+        <h2>1. Image Element</h2>
+        <figure>
+            <img src="https://via.placeholder.com/600x300" alt="Sample Multimedia Image">
+            <figcaption>Fig 1: A sample placeholder image using the &lt;img&gt; tag.</figcaption>
+        </figure>
+    </section>
+
+    <!-- AUDIO SECTION -->
+    <section>
+        <h2>2. Audio Element</h2>
+        <p>The &lt;audio&gt; tag embeds sound content with built-in playback controls.</p>
+        <audio controls>
+            <source src="audio-sample.mp3" type="audio/mpeg">
+            <source src="audio-sample.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <p><small>Note: Replace "audio-sample.mp3" with the path to your own audio file.</small></p>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section>
+        <h2>3. Video Element</h2>
+        <p>The &lt;video&gt; tag embeds video content directly into the web page.</p>
+        <video controls width="600" poster="https://via.placeholder.com/600x300?text=Video+Poster">
+            <source src="video-sample.mp4" type="video/mp4">
+            <source src="video-sample.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p><small>Note: Replace "video-sample.mp4" with the path to your own video file.</small></p>
+    </section>
+
+    <!-- EMBEDDED YOUTUBE VIDEO (iframe) -->
+    <section>
+        <h2>4. Embedded Video (via iframe)</h2>
+        <p>External videos, such as those from YouTube, can be embedded using an &lt;iframe&gt;.</p>
+        <iframe width="600" height="340"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Sample Embedded Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+</body>
+</html>
