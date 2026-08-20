@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>College Department</title
+
+</head>
+
+<body>
+
+    
+ <h1>College Department</h1> 
+
+ <ul>
+      <li>Management Department
+
+        <ul>
+          
+            <li>Marketing</li>
+            <li>Finance</li>
+            <li>Human Resource</li>
+
+            </ul>
+
+            <li>
+
+
+             <li>Computer Department
+                   <ul>
+          
+                        <li>Web Development</li>
+                        <li>Programming</li>
+                        <li>Database Management</li>
+                    </ul>
+                   </li>
+                  </ul>
+
+                  <h2>Student Activities</h2>
+              
+                <ol>  
+                      <li>Sport Activities</li>
+                      <li>Cultural Activities</li>
+                      <li>Technical Events</li>
+                      <li>Seminars</li>
+              </ol>
+     
+         </body>
+        </html>
